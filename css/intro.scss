@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    max-width: 1320px;
+    padding:0 15px;
+    margin:0 auto;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+
+// HEADER
+
+header{
+    background-color: black;
+    .logo{
+        color:white;
+        font-size: 22px;
+    }
+    nav{
+        li{
+            &:first-child{
+               a{
+                    color:white;
+               }
+            }
+            a{
+                padding:20px;
+                color:orange;
+                transition: 0.4s;
+                &:hover{
+                    color:white;
+                }
+            }
+        }
+    }
+}
